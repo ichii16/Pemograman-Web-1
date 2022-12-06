@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 9.4</title>
+</head>
+<body>
+    <h2>Penjumlahan Dua Bilangan</h2>
+
+    <form>
+        <input type="number" id="angka1" onchange="hasil_penjumlahan();">
+        <h1>+</h1>
+        <input type="number" id="angka2" onchange="hasil_penjumlahan();">
+        <h1>=</h1>
+        <input type="number" id="hasil">
+    </form>
+
+    <script>
+        function hasil_penjumlahan() {
+            let angka1 =  parseInt(document.getElementById("angka1").value);
+            let angka2 = parseInt(document.getElementById("angka2").value);
+            let h = angka1 + angka2
+            document.getElementById("hasil").value = h;
+        }
+    </script>
+</body>
+</html>
